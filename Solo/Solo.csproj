@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{256AC940-8AA7-4C4D-9684-5E351FE0E534}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Solo</RootNamespace>
+    <AssemblyName>Solo</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ForgotPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgotPassword.Designer.cs">
+      <DependentUpon>ForgotPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalVar.cs" />
+    <Compile Include="GoodsManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoodsManage.Designer.cs">
+      <DependentUpon>GoodsManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MidternPersonalProjectDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MidternPersonalProjectDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PersonDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonDetail.Designer.cs">
+      <DependentUpon>PersonDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCGoodsManage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCGoodsManage.Designer.cs">
+      <DependentUpon>UCGoodsManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCHistory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCHistory.Designer.cs">
+      <DependentUpon>UCHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCManage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCManage.Designer.cs">
+      <DependentUpon>UCManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCMeals.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCMeals.Designer.cs">
+      <DependentUpon>UCMeals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCMemberCenter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCMemberCenter.Designer.cs">
+      <DependentUpon>UCMemberCenter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCMenu.Designer.cs">
+      <DependentUpon>UCMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCOrderList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCOrderList.Designer.cs">
+      <DependentUpon>UCOrderList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCOrderManage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCOrderManage.Designer.cs">
+      <DependentUpon>UCOrderManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCPersonManage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCPersonManage.Designer.cs">
+      <DependentUpon>UCPersonManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCSeat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCSeat.Designer.cs">
+      <DependentUpon>UCSeat.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ForgotPassword.resx">
+      <DependentUpon>ForgotPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoodsManage.resx">
+      <DependentUpon>GoodsManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonDetail.resx">
+      <DependentUpon>PersonDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCGoodsManage.resx">
+      <DependentUpon>UCGoodsManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCHistory.resx">
+      <DependentUpon>UCHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCManage.resx">
+      <DependentUpon>UCManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCMeals.resx">
+      <DependentUpon>UCMeals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCMemberCenter.resx">
+      <DependentUpon>UCMemberCenter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCMenu.resx">
+      <DependentUpon>UCMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCOrderList.resx">
+      <DependentUpon>UCOrderList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCOrderManage.resx">
+      <DependentUpon>UCOrderManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCPersonManage.resx">
+      <DependentUpon>UCPersonManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCSeat.resx">
+      <DependentUpon>UCSeat.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="MidternPersonalProjectDataSet.xsc">
+      <DependentUpon>MidternPersonalProjectDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MidternPersonalProjectDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MidternPersonalProjectDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MidternPersonalProjectDataSet.xss">
+      <DependentUpon>MidternPersonalProjectDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redX1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
