@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,8 +13,7 @@ namespace Solo
         public static string permission = "";
         public static int userID = 0;
         public static int tableID = 0;
-        //public static string image_dir = @"C:\Users\iSpan\Desktop\CY\Project\image";
-        public static string image_dir = @"D:\桌面\資策會\CY\Project\image";
+        public static string image_dir = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\image");
         public static string strDBConnectionString = "";
         public static DateTime StartTime = DateTime.Now;
         public static TimeSpan TimePass = new TimeSpan(0, 0, 0);
